@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textoti1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/streamer1"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard" />
+
+                <TextView
+                    android:id="@+id/textocont1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/contenido1"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textoti1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/web1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoboton"
+                    app:icon="@drawable/ic_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textocont1"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textoti2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/famosa"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard2"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard2" />
+
+                <TextView
+                    android:id="@+id/textocont2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/contenido2"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textoti2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/web2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoboton"
+                    app:icon="@drawable/ic_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textocont2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textoti3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/famoso1"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard3"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard3"
+                    />
+
+                <TextView
+                    android:id="@+id/textocont3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/contenido3"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textoti3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/web3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoboton"
+                    app:icon="@drawable/ic_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textocont3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textoti4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/streamer2"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard4"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard4" />
+
+                <TextView
+                    android:id="@+id/textocont4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/contenido4"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textoti4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/web4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoboton"
+                    app:icon="@drawable/ic_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textocont4"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
