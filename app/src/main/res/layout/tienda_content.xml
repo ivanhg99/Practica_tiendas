@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/tienda_activity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul">
+
+                <TextView
+                    android:id="@+id/textoti1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/tienda1"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/text_margin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/textonum1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/desc1"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintTop_toBottomOf="@id/textoti1"
+                    app:layout_constraintStart_toStartOf="@id/textoti1"/>
+
+                <ImageView
+                    android:id="@+id/imgCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size1"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="@dimen/text_margin"
+                    app:layout_constraintStart_toStartOf="@id/textonum1"
+                    app:layout_constraintTop_toBottomOf="@id/textonum1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul">
+
+                <TextView
+                    android:id="@+id/textoti2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/tienda2"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/text_margin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/textonum2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/desc2"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintTop_toBottomOf="@id/textoti2"
+                    app:layout_constraintStart_toStartOf="@id/textoti2"/>
+
+                <ImageView
+                    android:id="@+id/imgCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size1"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="@dimen/text_margin"
+                    app:layout_constraintStart_toStartOf="@id/textonum2"
+                    app:layout_constraintTop_toBottomOf="@id/textonum2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul">
+
+                <TextView
+                    android:id="@+id/textoti3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/tienda3"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/text_margin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/textonum3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/desc3"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintTop_toBottomOf="@id/textoti3"
+                    app:layout_constraintStart_toStartOf="@id/textoti3"/>
+
+                <ImageView
+                    android:id="@+id/imgCard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size1"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="@dimen/text_margin"
+                    app:layout_constraintStart_toStartOf="@id/textonum3"
+                    app:layout_constraintTop_toBottomOf="@id/textonum3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancholay"
+                android:background="@color/azul">
+
+                <TextView
+                    android:id="@+id/textoti4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/tienda4"
+                    android:textSize="@dimen/anchotitulo"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/text_margin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/textonum4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/desc4"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textSize="@dimen/anchotextocont"
+                    app:layout_constraintTop_toBottomOf="@id/textoti4"
+                    app:layout_constraintStart_toStartOf="@id/textoti4"/>
+
+                <ImageView
+                    android:id="@+id/imgCard4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size1"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="@dimen/text_margin"
+                    app:layout_constraintStart_toStartOf="@id/textonum4"
+                    app:layout_constraintTop_toBottomOf="@id/textonum4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

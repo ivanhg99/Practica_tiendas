@@ -90,13 +90,24 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-    <string name="streamer1">Ibai</string>
-    <string name="contenido1">Era un caster y se ha convertido en un streamer de gran exito</string>
-    <string name="textoboton">Ver en wikipedia</string>
-    <string name="famosa">Jagger</string>
-    <string name="contenido2">Streamer loco que se ha hecho famoso por la velada.</string>
-    <string name="famoso1">Xokas</string>
-    <string name="contenido3">Streamer famoso por jugar al wow que tiene muchas polemicas</string>
-    <string name="streamer2">Jujalag</string>
-    <string name="contenido4">Streamer conocido por sorrylag pero murio en darksouls y se convirtio en juja</string>
+    <string name="centro1">Nuevo Centro</string>
+    <string name="dir1">Avenida Pio XII, 2</string>
+    <string name="num1">4</string>
+    <string name="centro2">Aqua</string>
+    <string name="dir2">Calle Menorca 19</string>
+    <string name="num2">5</string>
+    <string name="centro3">El Saler</string>
+    <string name="dir3">Avda del Profesor López Piñero, nº 16</string>
+    <string name="num3">4</string>
+    <string name="centro4">Arena</string>
+    <string name="dir4">C/ de Santa Genoveva Torres, 21</string>
+    <string name="num4">5</string>
+    <string name="tienda1">Nike</string>
+    <string name="desc1">Tienda de ropa de una marca de deporte</string>
+    <string name="tienda2">Adidas</string>
+    <string name="desc2">Tienda de ropa de una marca de deporte</string>
+    <string name="tienda3">La casa del libro</string>
+    <string name="desc3">Tienda de todo tipo de libros</string>
+    <string name="tienda4">Mercadona</string>
+    <string name="desc4">Tienda muy popular de comidas</string>
 </resources>

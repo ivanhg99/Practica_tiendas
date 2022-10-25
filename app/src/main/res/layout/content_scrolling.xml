@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ScrollingActivity"
-    tools:showIn="@layout/activity_scrolling">
+    tools:showIn="@layout/activity_scrolling"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,46 +27,45 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/ancholay"
-                android:background="@color/azul"
-                android:paddingStart="@dimen/common_padding_default"
-                android:paddingTop="@dimen/common_padding_default"
-                android:paddingEnd="@dimen/common_padding_default">
+                android:background="@color/azul">
 
                 <ImageView
                     android:id="@+id/imgCard"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/card_img_size"
+                    android:layout_height="match_parent"
                     android:src="@mipmap/ic_launcher"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textoti1"
+                    android:id="@+id/textocen1"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/streamer1"
+                    android:text="@string/centro1"
                     android:textSize="@dimen/anchotitulo"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@id/imgCard"
-                    app:layout_constraintTop_toBottomOf="@id/imgCard" />
+                    app:layout_constraintStart_toStartOf="@id/textocalle1"
+                    app:layout_constraintBottom_toTopOf="@id/textocalle1" />
 
                 <TextView
-                    android:id="@+id/textocont1"
+                    android:id="@+id/textocalle1"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/contenido1"
+                    android:text="@string/dir1"
                     android:textSize="@dimen/anchotextocont"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textoti1" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/web1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/textoboton"
-                    app:icon="@drawable/ic_add"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textocont1"/>
+                <TextView
+                    android:id="@+id/textonum1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/num1"
+                    android:textSize="@dimen/anchotextocont"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -82,46 +83,45 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/ancholay"
-                android:background="@color/azul"
-                android:paddingStart="@dimen/common_padding_default"
-                android:paddingTop="@dimen/common_padding_default"
-                android:paddingEnd="@dimen/common_padding_default">
+                android:background="@color/azul">
 
                 <ImageView
                     android:id="@+id/imgCard2"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/card_img_size"
+                    android:layout_height="match_parent"
                     android:src="@mipmap/ic_launcher"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textoti2"
+                    android:id="@+id/textocen2"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/famosa"
+                    android:text="@string/centro2"
                     android:textSize="@dimen/anchotitulo"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@id/imgCard2"
-                    app:layout_constraintTop_toBottomOf="@id/imgCard2" />
+                    app:layout_constraintStart_toStartOf="@id/textocalle2"
+                    app:layout_constraintBottom_toTopOf="@id/textocalle2" />
 
                 <TextView
-                    android:id="@+id/textocont2"
+                    android:id="@+id/textocalle2"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/contenido2"
+                    android:text="@string/dir2"
                     android:textSize="@dimen/anchotextocont"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textoti2" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard2"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard2" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/web2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/textoboton"
-                    app:icon="@drawable/ic_add"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textocont2"/>
+                <TextView
+                    android:id="@+id/textonum2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/num2"
+                    android:textSize="@dimen/anchotextocont"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard2"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard2" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -139,47 +139,45 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/ancholay"
-                android:background="@color/azul"
-                android:paddingStart="@dimen/common_padding_default"
-                android:paddingTop="@dimen/common_padding_default"
-                android:paddingEnd="@dimen/common_padding_default">
+                android:background="@color/azul">
 
                 <ImageView
                     android:id="@+id/imgCard3"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/card_img_size"
+                    android:layout_height="match_parent"
                     android:src="@mipmap/ic_launcher"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textoti3"
+                    android:id="@+id/textocen3"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/famoso1"
+                    android:text="@string/centro3"
                     android:textSize="@dimen/anchotitulo"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@id/imgCard3"
-                    app:layout_constraintTop_toBottomOf="@id/imgCard3"
-                    />
+                    app:layout_constraintStart_toStartOf="@id/textocalle3"
+                    app:layout_constraintBottom_toTopOf="@id/textocalle3" />
 
                 <TextView
-                    android:id="@+id/textocont3"
+                    android:id="@+id/textocalle3"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/contenido3"
+                    android:text="@string/dir3"
                     android:textSize="@dimen/anchotextocont"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textoti3" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard3"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard3" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/web3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/textoboton"
-                    app:icon="@drawable/ic_add"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textocont3"/>
+                <TextView
+                    android:id="@+id/textonum3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/num3"
+                    android:textSize="@dimen/anchotextocont"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard3"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard3" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -197,46 +195,45 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/ancholay"
-                android:background="@color/azul"
-                android:paddingStart="@dimen/common_padding_default"
-                android:paddingTop="@dimen/common_padding_default"
-                android:paddingEnd="@dimen/common_padding_default">
+                android:background="@color/azul">
 
                 <ImageView
                     android:id="@+id/imgCard4"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/card_img_size"
+                    android:layout_height="match_parent"
                     android:src="@mipmap/ic_launcher"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textoti4"
+                    android:id="@+id/textocen4"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/streamer2"
+                    android:text="@string/centro4"
                     android:textSize="@dimen/anchotitulo"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@id/imgCard4"
-                    app:layout_constraintTop_toBottomOf="@id/imgCard4" />
+                    app:layout_constraintStart_toStartOf="@id/textocalle4"
+                    app:layout_constraintBottom_toTopOf="@id/textocalle4" />
 
                 <TextView
-                    android:id="@+id/textocont4"
+                    android:id="@+id/textocalle4"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/altolay"
-                    android:text="@string/contenido4"
+                    android:text="@string/dir4"
                     android:textSize="@dimen/anchotextocont"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textoti4" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/imgCard4"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard4" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/web4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/textoboton"
-                    app:icon="@drawable/ic_add"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textocont4"/>
+                <TextView
+                    android:id="@+id/textonum"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altolay"
+                    android:text="@string/num4"
+                    android:textSize="@dimen/anchotextocont"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard4"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCard4" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

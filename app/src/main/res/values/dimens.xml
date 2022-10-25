@@ -5,9 +5,10 @@
     <dimen name="common_margin">8dp</dimen>
     <dimen name="common_padding_default">16dp</dimen>
     <dimen name="card_img_size">100dp</dimen>
-    <dimen name="anchotexto">20sp</dimen>
-    <dimen name="anchotitulo">40sp</dimen>
-    <dimen name="anchotextocont">20sp</dimen>
+    <dimen name="card_img_size1">180dp</dimen>
+    <dimen name="anchotexto">18sp</dimen>
+    <dimen name="anchotitulo">18sp</dimen>
+    <dimen name="anchotextocont">18sp</dimen>
     <dimen name="ancholay">289dp</dimen>
-    <dimen name="altolay">58dp</dimen>
+    <dimen name="altolay">20dp</dimen>
 </resources>
